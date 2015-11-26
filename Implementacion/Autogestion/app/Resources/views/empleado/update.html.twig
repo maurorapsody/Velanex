@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %} {% block body %}
+{% for flashMessage in app.session.flashbag.get('mensaje') %}
+<span class="alert-success">
+	{{ flashMessage }}
+	<hr/>
+</span>
+{% endfor %}
+<style>
+body {
+	margin: 0%;
+}
+
+.form-group {
+	margin-top: 12px;
+}
+
+.panel-heading {
+	text-align: center;
+	font-size: 40px;
+}
+
+.panel {
+	margin: 3%;
+}
+</style>
+{% for flashMessage in app.session.flashbag.get('mensaje') %}
+<span class="alert-success"> {{ flashMessage }}
+	<hr />
+</span>
+{% endfor %}
+<div class="panel panel-default">
+	<div class="panel-heading">Usuario</div>
+	<ul class="nav nav-tabs">
+		<li role="presentation"><a href="{{ path('Usuario') }}">Lista</a></li>
+		<li role="presentation"><a href="{{ path('newUsuario') }}">Crear</a></li>
+		<li role="presentation"><a href="{{ path('retrieveUsuario') }}">Consultar</a></li>
+		<li role="presentation" class="active"><a href="#">Actualizar</a></li>
+	</ul>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form class="form-horizontal" method="post">
+			<div class="form-group">
+				<label for="tipoDocumentoLabel" class="col-sm-3 control-label">Tipo
+					Documento</label>
+				<div class="col-sm-2">
+					<select class="form-control" id="tipoDocumento"
+						name="tipoDocumento" disabled="disabled">
+						<option>CC</option>
+						<option>PA</option>
+						<option>CE</option>
+						<option>TI</option>
+					</select>
+				</div>
+				<label for="numeroDocumentoLabel" class="col-sm-3 control-label">Numero
+					de Documento</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="numeroDocumento"
+						name="numeroDocumento" placeholder="Numero de documento" value="{{ user.numeroIdentificacion }}" readonly="readonly">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="nombreUsuarioLabel" class="col-sm-3 control-label">Nombre
+					de Usuario</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="nombreUsuario"
+						name="nombreUsuario" placeholder="Nombre de usuario" value="{{ user.nombreUsuario }}" readonly="readonly">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="primerNombreLabel" class="col-sm-3 control-label">Primer
+					nombre</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="primerNombre"
+						name="primerNombre" placeholder="Primer nombre" value="{{ user.primerNombre }}">
+				</div>
+				<label for="segundoNombreLabel" class="col-sm-3 control-label">Segundo
+					nombre</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="segundoNombre"
+						name="segundoNombre" placeholder="Segundo nombre" value="{{ user.segundoNombre }}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="primerApellidoLabel" class="col-sm-3 control-label">Primer
+					apellido</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="primerApellido"
+						name="primerApellido" placeholder="Primer apellido" value="{{ user.primerApellido }}">
+				</div>
+				<label for="segundoApellidoLabel" class="col-sm-3 control-label">Segundo
+					apellido</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="segundoApellido"
+						name="segundoApellido" placeholder="Segundo apellido" value="{{ user.segundoApellido }}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="generoLabel" class="col-sm-3 control-label">Genero</label>
+				<div class="col-sm-2">
+					<select class="form-control" id="genero" name="genero">
+						<option selected="selected">M</option>
+						<option>F</option>
+					</select>
+				</div>
+				<label for="fecha" class="col-sm-3 control-label">Fecha de Nacimiento</label>
+				<div class="col-sm-2">
+					<input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento"  value="{{ user.fechaNacimiento }}">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-6 col-sm-4">
+					<button type="submit" class="btn btn-primary btn-lg btn-block">Crear</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

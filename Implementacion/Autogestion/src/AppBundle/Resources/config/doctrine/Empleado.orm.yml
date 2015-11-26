@@ -1,0 +1,91 @@
+AppBundle\Entity\Empleado:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Entity\EmpleadoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        numeroIdentificacion:
+            type: string
+            length: '10'
+        tipoIdentificacion:
+            type: string
+            length: '2'
+        primerNombre:
+            type: string
+            length: '100'
+        segundoNombre:
+            type: string
+            length: '100'
+        primerApellido:
+            type: string
+            length: '100'
+        segundoApellido:
+            type: string
+            length: '100'
+        fechaNacimiento:
+            type: date
+            length: null
+        genero:
+            type: string
+            length: '1'
+        fechaIngreso:
+            type: date
+            length: null
+        estadoCivil:
+            type: string
+            length: '10'
+        direccion:
+            type: string
+            length: '255'
+        barrio:
+            type: string
+            length: '100'
+        estrato:
+            type: integer
+            length: null
+        telefono:
+            type: string
+            length: '10'
+        celular:
+            type: string
+            length: '20'
+        email:
+            type: string
+            length: '25'
+        tipoContrato:
+            type: string
+            length: '10'
+        eps:
+            type: string
+            length: '100'
+        fondoPensiones:
+            type: string
+            length: '100'
+        fondoCesantias:
+            type: string
+            length: '100'
+        tipoVivienda:
+            type: string
+            length: '10'
+    oneToMany:
+        hijos:
+            targetEntity: Hijo
+            mappedBy: Empleado
+    oneToOne:
+        cargo:
+            targetEntity: Cargo
+            joinColumn:
+                name: cargoId
+                referencedColumnName: id
+    oneToOne:
+        conyugue:
+            targetEntity: Conyugue
+            joinColumn:
+                name: conyugueId
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

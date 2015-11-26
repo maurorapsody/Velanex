@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %} {% block body %}
+<style>
+body {
+	margin: 0%;
+}
+
+.form-group {
+	margin-top: 12px;
+}
+
+.panel-heading {
+	text-align: center;
+	font-size: 40px;
+}
+
+.panel {
+	margin: 3%;
+}
+</style>
+{% for flashMessage in app.session.flashbag.get('mensaje') %}
+<span class="alert-success"> {{ flashMessage }}
+	<hr />
+</span>
+{% endfor %}
+<div class="panel panel-default">
+	<div class="panel-heading">Empleado</div>
+	<ul class="nav nav-tabs">
+		<li role="presentation" class="active"><a href="#">Lista</a></li>
+		<li role="presentation"><a href="{{ path('newEmpleado') }}">Crear</a></li>
+		<li role="presentation"><a href="{{ path('retrieveEmpleado') }}">Consultar</a></li>
+		<li role="presentation"><a href="">Actualizar</a></li>
+	</ul>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td>Id.</td>
+					<td>Numero Documento</td>
+					<td>Tipo Documento</td>
+					<td>Primer Nombre</td>
+					<td>Segundo Nombre</td>
+					<td>Primer Apellido</td>
+					<td>Segundo Apellido</td>
+					<td>Genero</td>
+					<td>Fecha de Nacimiento</td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for user in users %}
+				<tr>
+					<td>{{ user.id }}</td>
+					<td>{{ user.numeroIdentificacion }}</td>
+					<td>{{ user.tipoIdentificacion }}</td>
+					<td>{{ user.primerNombre }}</td>
+					<td>{{ user.segundoNombre }}</td>
+					<td>{{ user.primerApellido }}</td>
+					<td>{{ user.segundoApellido }}</td>
+					<td>{{ user.genero }}</td>
+					<td>{{ user.fechaNacimiento|date('Y-m-d') }}</td>
+					<td><a href="{{ path('deleteEmpleado',{'id': user.id}) }}">Eliminar</a></td>
+				</tr>
+				{% endfor %}
+		
+		</table>
+	</div>
+</div>
+{% endblock %}

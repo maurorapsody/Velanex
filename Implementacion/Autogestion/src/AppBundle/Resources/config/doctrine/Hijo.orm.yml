@@ -1,0 +1,42 @@
+AppBundle\Entity\Hijo:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Entity\HijoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        numeroIdentificacion:
+            type: string
+            length: '10'
+        tipoIdentificacion:
+            type: string
+            length: '2'
+        primerNombre:
+            type: string
+            length: '100'
+        segundoNombre:
+            type: string
+            length: '100'
+        primerApellido:
+            type: string
+            length: '100'
+        segundoApellido:
+            type: string
+            length: '100'
+        fechaNacimiento:
+            type: date
+            length: null
+        genero:
+            type: string
+            length: '1'
+        escolaridad:
+            type: string
+            length: '10'
+        subsidiado:
+            type: boolean
+            length: null
+    lifecycleCallbacks: {  }

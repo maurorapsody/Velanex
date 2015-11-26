@@ -1,0 +1,47 @@
+AppBundle\Entity\Usuario:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Entity\UsuarioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        numeroIdentificacion:
+            type: string
+            length: '10'
+        tipoIdentificacion:
+            type: string
+            length: '2'
+        nombreUsuario:
+            type: string
+            length: '25'
+        primerNombre:
+            type: string
+            length: '100'
+        segundoNombre:
+            type: string
+            length: '100'
+            nullable: TRUE
+        primerApellido:
+            type: string
+            length: '100'
+        segundoApellido:
+            type: string
+            length: '100'
+            nullable: TRUE
+        fechaNacimiento:
+            type: date
+            nullable: TRUE
+        genero:
+            type: string
+            length: '1'
+        contrasenha:
+            type: string
+            length: '25'
+        rol:
+            type: string
+            length: '1'
+    lifecycleCallbacks: {  }

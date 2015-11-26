@@ -1,0 +1,15 @@
+AppBundle\Entity\Area:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Entity\AreaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

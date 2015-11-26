@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %} {% block body %} {% for flashMessage in
+app.session.flashbag.get('mensaje') %}
+<span class="alert-success"> {{ flashMessage }}
+	<hr />
+</span>
+{% endfor %}
+<style>
+body {
+	margin: 0%;
+}
+
+.form-group {
+	margin-top: 12px;
+}
+
+.panel-heading {
+	text-align: center;
+	font-size: 40px;
+}
+
+.panel {
+	margin: 3%;
+}
+</style>
+{% for flashMessage in app.session.flashbag.get('mensaje') %}
+<span class="alert-success"> {{ flashMessage }}
+	<hr />
+</span>
+{% endfor %}
+<div class="panel panel-default">
+	<div class="panel-heading">Empleado</div>
+	<ul class="nav nav-tabs">
+		<li role="presentation"><a href="{{ path('Empleado') }}">Lista</a></li>
+		<li role="presentation"><a href="{{ path('newEmpleado') }}">Crear</a></li>
+		<li role="presentation" class="active"><a href="#">Consultar</a></li>
+		<li role="presentation"><a href="">Actualizar</a></li>
+	</ul>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form class="form-horizontal" method="post">
+			<div class="form-group">
+				<label for="tipoDocumentoLabel" class="col-sm-2 control-label">Tipo
+					Documento</label>
+				<div class="col-sm-10">
+					<select class="form-control" id="tipoDocumento"
+						name="tipoDocumento">
+						<option>CC</option>
+						<option>PA</option>
+						<option>CE</option>
+						<option>TI</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="numeroDocumentoLabel" class="col-sm-2 control-label">Numero
+					de Documento</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="numeroDocumento"
+						name="numeroDocumento" placeholder="Numero de documento">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Consultar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

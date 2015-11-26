@@ -1,0 +1,21 @@
+AppBundle\Entity\Cargo:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Entity\CargoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+    oneToOne:
+        area:
+            targetEntity: Area
+            joinColumn:
+                name: areaId
+                referencedColumnName: id
+    lifecycleCallbacks: {  }
