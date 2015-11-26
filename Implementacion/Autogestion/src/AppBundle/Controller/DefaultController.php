@@ -20,7 +20,7 @@ class DefaultController extends Controller
 	    	if ($user){
 	    		$session = $request->getSession();
 	    		$session->set("nombre", $userName);
-	    		return $this->render('<html><body>Hello '.$userName.'!</body></html>');
+	    		return $this->redirectToRoute('Empleado');
 	    	}
 	    	else {
 	    		$this->get('session')->getFlashBag()->add('mensaje', 'Los datos ingresados no son validos');

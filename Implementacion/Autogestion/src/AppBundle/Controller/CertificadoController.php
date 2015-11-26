@@ -10,7 +10,7 @@ class CertificadoController extends Controller
 	/**
 	 * @Route("/Certificado",name="Certificado")
 	 */
-	public function UsuarioAction(){
+	public function CertificadoAction(){
 		return $this->render('certificado/certificado.html.twig');
 	}
 }
