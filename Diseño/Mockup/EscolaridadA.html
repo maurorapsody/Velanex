@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Actualización</title>
+
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">   
+<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+
+  
+	
+	<style>
+		body {margin:0%;}
+		.form-group{margin-top:12px;}
+		.panel-heading{text-align:center;font-size:30px;}
+		h3{margin:30px;text-decoration:underline;}
+		h4{margin:30px;}
+		.panel {margin:3%;}
+		.btn {margin:1%;}
+		.img-rounded{margin-top:4px;width:40px;height:40px;}
+	</style>
+  </head>
+  <body>
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <img alt="Brand" src="logo.jpg" class="img-rounded">
+		</div>
+		<div>
+      <ul class="nav navbar-nav">
+	  <li><a href="Usuarios.html">Usuarios</a></li> 
+        <li ><a href="#">Crear Usuario</a></li>
+        <li><a href="Buscar.html">Buscar</a></li>
+        <li class="active"><a href="Actualizar.html">Actualizar</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
+      </ul>
+    </div>
+		</div>
+</nav>
+ 
+  
+  <div class="panel panel-default">
+  <div class="panel-heading">Actualización de Datos</div>
+  <ul class="nav nav-tabs">
+  <li role="presentation" ><a href="Actualizar.html">Datos Personales</a></li>
+  <li role="presentation" class="active"><a href="EscolaridadA.html">Escolaridad y Actividades</a></li>
+  <li role="presentation"><a href="DatosFamiliaresA.html">Datos Familiares</a></li>
+  <li role="presentation"><a href="Dotacion.html">Dotacion</a></li>
+</ul>
+</div>
+
+
+	<div class="panel panel-default">
+	  <div class="panel-body">
+		<form class="form-inline">
+			<div class="row marketing">
+			<h3>Estudios</h3>
+		
+				<div class="col-lg-6">
+				
+				   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="primaria">Primaria (Grado)</label><br>
+					<select class="form-control" id="primaria">
+					  <option>Completa</option>
+					  <option>Incompleta</option>
+					</select>
+					<select class="form-control" id="añosP">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>
+				  
+				     <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="secundaria">Secundaria (Grado)</label><br>
+					<select class="form-control" id="secundaria">
+					  <option>Completa</option>
+					  <option>Incompleta</option>
+					</select>
+					<select class="form-control" id="añosS">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>
+				  
+				   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="tecnico">Tecnico (Años)</label><br>
+					<select class="form-control" id="tecnico">
+					  <option>Completa</option>
+					  <option>Incompleta</option>
+					</select>
+					<select class="form-control" id="añosS">
+					  <option>1</option>
+					  <option>2</option>
+					</select>
+				  </div>
+				  
+				  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="otros">Otros Estudios</label><br>
+					<input type="text" class="form-control" id="otros" name="otros" placeholder="Otros Estudios">
+				  </div>
+				  
+				   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="idioma">Idiomas</label><br>
+					<select class="form-control" id="idioma">
+					  <option>Inglés</option>
+					  <option>Francés</option>
+					  <option>Alemán</option>
+					  <option>Italiano</option>
+					  <option>Portugués</option>  
+					</select>
+					<select class="form-control" id="nivel">
+					  <option>Alto</option>
+					  <option>Medio</option>
+					  <option>Bajo</option>
+					</select>
+				  </div>
+				  
+				  </div>
+				  
+				<div class="col-lg-6">
+				
+				   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="primaria">Tecnologo (Años o Semestres)</label><br>
+					<select class="form-control" id="primaria">
+					  <option>Completa</option>
+					  <option>Incompleta</option>
+					</select>
+					<select class="form-control" id="añosP">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					</select>
+				  </div>	   
+				  
+				  
+				  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+					<label for="primaria">Universitario (Semestres)</label><br>
+					<select class="form-control" id="primaria">
+					  <option>Completa</option>
+					  <option>Incompleta</option>
+					</select>
+					<select class="form-control" id="añosP">
+					  <option>1</option><option>2</option><option>3</option><option>4</option>
+					  <option>5</option><option>6</option><option>7</option><option>8</option>
+					  <option>9</option><option>10</option>
+					</select>
+				  </div>
+				</div>
+			</div>
+	
+	<div class="row marketing">
+
+		<h3>Actividades</h3>
+		
+		<h4>Realiza alguna de las siguientes actividades:</h4>
+		<div class="col-lg-6">
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="deporte">Deporte</label><br>
+			<select class="form-control" id="deporte">
+					  <option>SI</option>
+					  <option>NO</option>
+					</select>
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="lee">Lee</label><br>
+			<select class="form-control" id="lee">
+					  <option>SI</option>
+					  <option>NO</option>
+					</select>
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="musica">Escucha Musica</label><br>
+			<select class="form-control" id="musica">
+					  <option>SI</option>
+					  <option>NO</option>
+					</select>
+		  </div>
+		 
+		</div>
+		
+		<div class="col-lg-6">
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="camina">Camina</label><br>
+			<select class="form-control" id="camina">
+					  <option>SI</option>
+					  <option>NO</option>
+					</select>
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="lee">Ve Televición</label><br>
+			<select class="form-control" id="lee">
+					  <option>SI</option>
+					  <option>NO</option>
+					</select>
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="otros">Otros</label><br>
+			<input type="text" class="form-control" id="otros" name="otros" placeholder="Describa">
+		  </div>
+		 
+		</div>
+		
+	</div>
+		
+		<br>
+		  
+			<a href="Actualizar.html" class="btn btn-primary" role="button">Atras</a>
+			<a href="DatosFamiliaresA.html" class="btn btn-primary" role="button">Guardar</a>
+		</form>
+	  </div>
+	</div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </body>
+</html>

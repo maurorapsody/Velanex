@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Formulario Persona</title>
+
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">   
+<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+
+  
+	
+	<style>
+		body {margin:0%;}
+		.form-group{margin-top:12px;}
+		.panel-heading{text-align:center;font-size:30px;}
+		.panel {margin:2%;}
+		h3{margin:30px;text-decoration:underline;}
+		.img-rounded{margin-top:4px;width:40px;height:40px;}
+		.btn {margin:1%;}
+	</style>
+  </head>
+  <body>
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <img alt="Brand" src="logo.jpg" class="img-rounded">
+		</div>
+		<div>
+      <ul class="nav navbar-nav">
+	  <li><a href="Usuarios.html">Usuarios</a></li> 
+        <li class="active"><a href="#">Crear Usuario</a></li>
+        <li><a href="Buscar.html">Buscar</a></li>
+		<li><a href="Actualizar.html">Actualizar</a></li>  
+      </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
+      </ul>
+    </div>
+		</div>
+</nav>
+  
+  <div class="panel panel-default">
+  <div class="panel-heading">Empleado</div>
+  <ul class="nav nav-tabs">
+  <li role="presentation" ><a href="Persona.html">Datos Personales</a></li>
+  <li role="presentation"><a href="Escolaridad.html">Escolaridad y Actividades</a></li>
+  <li role="presentation"  class="active"><a href="DatosFamiliares.html">Datos Familiares</a></li>
+  <li role="presentation"><a href="Dotacion.html">Dotacion</a></li>
+</ul>
+</div>
+
+
+	
+	<div class="panel panel-default">
+	  <div class="panel-body">
+		<form class="form-inline">
+			<div class="row marketing">
+			<h3>Conyuge</h3>
+		
+				<div class="col-lg-6">
+				
+				    <div class="form-group; col-md-4">
+						<label for="apellidos">Apellidos</label><br>
+						<input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos">
+					  </div>
+					  
+					  <div class="form-group;col-xs-6 col-sm-6 col-md-4">
+						<label for="nombre">Nombres</label><br>
+						<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+					  </div>
+					  
+					   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="fechaN">Fecha de Nacimiento</label><br>
+						<input type="date" class="form-control" id="fechaN" name="fechaN">
+					   </div>
+					  
+					  	<div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="empresaC">Empresa donde Labora</label><br>
+						<input type="text" class="form-control" id="empresaC" name="empresaC" placeholder="Empresa donde Labora">
+					  </div>
+			</div>
+			
+			<div class="col-lg-6">
+							  
+					  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="telefono">Telefono</label><br>
+						<input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+					  </div>
+					  
+					    <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="celurar">No. Celular</label><br>
+						<input type="tel" class="form-control" id="celurar" name="celurar" placeholder="Celular">
+					  </div>
+					  
+					   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="ocupacion">Ocupación</label><br>
+						<input type="text" class="form-control" id="ocupacion"  name="ocupacion" placeholder="Ocupación">
+					  </div>				
+			</div>		
+	</div>
+	<div class="row marketing">
+
+		<h3>Hijo</h3>
+			<div class="col-lg-6">
+				
+				    <div class="form-group; col-md-4">
+						<label for="apellidosH">Apellidos</label><br>
+						<input type="text" class="form-control" id="apellidosH" name="apellidosH" placeholder="Apellidos">
+					  </div>
+					  
+					  <div class="form-group;col-xs-6 col-sm-6 col-md-4">
+						<label for="nombreH">Nombres</label><br>
+						<input type="text" class="form-control" id="nombreH" name="nombreH" placeholder="Nombre">
+					  </div>
+					  
+					   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="fechaNH">Fecha de Nacimiento</label><br>
+						<input type="date" class="form-control" id="fechaNH" name="fechaNH">
+					   </div>
+			</div>
+			
+			<div class="col-lg-6">
+							  
+					  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="nivelE">Nivel Escolar</label><br>
+						<select class="form-control" id="nivelE">
+						  <option>Primaria</option>
+						  <option>Segundaria</option>
+						  <option>Universitaria</option>
+					</select>
+					  </div>
+					  
+					     <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="grado">Grado Actual</label><br>
+						<input type="text" class="form-control" id="grado"  name="grado" placeholder="Grado Actual">
+					  </div>
+					  
+					     <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+							<label for="subsidioH"> Recibe Subsidio</label><br>
+							<select class="form-control" id="subsidioH">
+									  <option>SI</option>
+									  <option>NO</option>
+									</select>
+						  </div>
+			</div>
+		
+		
+	</div>
+	
+		<div class="row marketing">
+
+		<h3>Padre</h3>
+			<div class="col-lg-6">
+				
+				    <div class="form-group; col-md-4">
+						<label for="apellidosP">Apellidos</label><br>
+						<input type="text" class="form-control" id="apellidosP" name="apellidosP" placeholder="Apellidos">
+					  </div>
+					  
+					  <div class="form-group;col-xs-6 col-sm-6 col-md-4">
+						<label for="nombreP">Nombres</label><br>
+						<input type="text" class="form-control" id="nombreP" name="nombreP" placeholder="Nombre">
+					  </div>
+					  
+					   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="fechaNP">Fecha de Nacimiento</label><br>
+						<input type="date" class="form-control" id="fechaNP" name="fechaNP">
+					   </div>
+			</div>
+			
+			<div class="col-lg-6">
+							  
+					   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="ocupacionP">Ocupación</label><br>
+						<input type="text" class="form-control" id="ocupacionP"  name="ocupacionP" placeholder="Ocupación">
+					  </div>	
+					  
+					     <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+							<label for="subsidioP"> Recibe Subsidio</label><br>
+							<select class="form-control" id="subsidioP">
+									  <option>SI</option>
+									  <option>NO</option>
+									</select>
+						  </div>
+			</div>
+	</div>
+	
+		<div class="row marketing">
+
+		<h3>Madre</h3>
+			<div class="col-lg-6">
+				
+				    <div class="form-group; col-md-4">
+						<label for="apellidosM">Apellidos</label><br>
+						<input type="text" class="form-control" id="apellidosM" name="apellidosM" placeholder="Apellidos">
+					  </div>
+					  
+					  <div class="form-group;col-xs-6 col-sm-6 col-md-4">
+						<label for="nombreM">Nombres</label><br>
+						<input type="text" class="form-control" id="nombreM" name="nombreM" placeholder="Nombre">
+					  </div>
+					  
+					   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="fechaNM">Fecha de Nacimiento</label><br>
+						<input type="date" class="form-control" id="fechaNM" name="fechaNM">
+					   </div>
+			</div>
+			
+			<div class="col-lg-6">
+							  
+				 <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+						<label for="ocupacionM">Ocupación</label><br>
+						<input type="text" class="form-control" id="ocupacionM"  name="ocupacionM" placeholder="Ocupación">
+					  </div>	
+					  
+					     <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+							<label for="subsidioM"> Recibe Subsidio</label><br>
+							<select class="form-control" id="subsidioM">
+									  <option>SI</option>
+									  <option>NO</option>
+									</select>
+						  </div>
+			</div>
+	</div>
+		
+		<br>
+		
+		
+		
+		  
+			<a href="Escolaridad.html" class="btn btn-primary" role="button">Atras</a>
+			<a href="Dotacion.html" class="btn btn-primary" role="button">Guardar</a>
+		</form>
+	  </div>
+	</div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </body>
+</html>

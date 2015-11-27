@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Actualización</title>
+
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">   
+<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+	<style>
+		body {margin:0%;}
+		.form-group{margin-top:12px;}
+		.panel-heading{text-align:center;font-size:40px;}
+		.panel {margin:1%;}
+		.img-rounded{margin-top:4px;width:40px;height:40px;}
+		.btn {margin:1%;}
+	</style>
+  </head>
+  <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <img alt="Brand" src="logo.jpg" class="img-rounded">
+		</div>
+		<div>
+      <ul class="nav navbar-nav">
+	  	<li><a href="Usuarios.html">Usuarios</a></li> 
+        <li ><a href="Persona.html">Crear Usuario</a></li>
+        <li><a href="Buscar.html">Buscar</a></li>
+        <li class="active"><a href="#">Actualizar</a></li> 
+      </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
+      </ul>
+    </div>
+		</div>
+</nav>
+ 
+  
+  <div class="panel panel-default">
+  <div class="panel-heading">Actualización de Datos</div>
+  <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="Actualizar.html">Datos Personales</a></li>
+   <li role="presentation"><a href="EscolaridadA.html">Escolaridad y Actividades</a></li>
+  <li role="presentation"><a href="DatosFamiliaresA.html">Datos Familiares</a></li>
+  <li role="presentation"><a href="Dotacion.html">Dotacion</a></li>
+</ul>
+</div>
+
+
+	<div class="panel panel-default">
+	  <div class="panel-body">
+		<form class="form-inline">
+			<div class="row marketing">
+		<div class="col-lg-6">
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="edadA">Edad Actual</label><br>
+			<input type="number" class="form-control" id="edadA" name="edadA" placeholder="Edad">
+		  </div>
+		  
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="genero">Genero </label><br>
+			<!_-<input type="text" class="form-control" id="genero" name="genero" placeholder="Genero"-->
+			<select class="form-control" id="genero" name="genero">
+			  <option>F</option>
+			  <option>M</option>
+			</select>
+		  </div>
+		  
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="telefono">Telefono</label><br>
+			<input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="pension">Fondo de Pensión</label><br>
+			<input type="text" class="form-control" id="pension"  name="pension" placeholder="Fondo de Pensión">
+		  </div>
+		  
+		    <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="cesantias">Fondo de Cesantías</label><br>
+			<input type="text" class="form-control" id="cesantias" name="cesantias" placeholder="Fondo de Cesantías">
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="estrato">Estrato </label><br>
+			<select class="form-control" id="estrato" name="estrato">
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			</select>
+		  </div>
+		  
+		    <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="estadoCi">Estado Civil </label><br>
+			<select class="form-control" id="estadoCi" name="estadoCi">
+			  <option>Soltero/a</option>
+			  <option>Casado/a</option>
+			  <option>Divorciado/a</option>
+			  <option>Viudo/a</option>
+			  <option>Union Libre</option>
+			</select>
+		  </div>
+		  
+		    <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="hijos">No. Hijos </label><br>
+			<select class="form-control" id="hijos" name="hijos">
+			  <option>0</option>
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>Más</option>
+			</select>
+		  </div>
+		  
+		    <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="areaE">Area de Empleo</label><br>
+			<input type="text" class="form-control" id="areaE" name="areaE" placeholder="Area de Empleo">
+		  </div>
+		  
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="fechaAc">Fecha de Actual</label><br>
+			<input type="date" class="form-control" id="fechaAc" name="fechaAc">
+		   </div>
+		  
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="salario">Salario</label><br>
+			<input type="number" class="form-control" id="salario" name="salario" placeholder="salario">
+		  </div>
+		  
+		</div>
+		
+		<div class="col-lg-6">
+		<div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="celular">No. Celular</label><br>
+			<input type="tel" class="form-control" id="celular" name="celular" placeholder="Celular">
+		  </div>
+		  
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="email">E-mail</label><br>
+			<input type="email" class="form-control" id="email" name="email" placeholder="Correo Electronico">
+		  </div>
+		  
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="eps">EPS</label><br>
+			<input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+		  </div>
+		  
+		  <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="barrio">Barrio</label><br>
+			<input type="text" class="form-control" id="barrio" name="barrio" placeholder="Barrio">
+		  </div>
+		
+		
+		<div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="tipoV">Tipo de Vivienda </label><br>
+			<select class="form-control" id="tipoV" name="tipoV">
+			  <option>Casa Propia</option>
+			  <option>Casa en Arriendo</option>
+			  <option>Apartamento Propia</option>
+			  <option>Apartamento en Arriendo</option>
+			</select>
+		  </div>
+		  
+		    <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="tiempo">Tiempo de Cas al Trab</label><br>
+			<input  class="form-control" type="number" name="tiempo" min="1" max="10">
+		  </div>
+		  
+		     <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="cargo">Cargo</label><br>
+			<input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo">
+		  </div>
+	
+			<div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="fechaC">Fecha de Contrato</label><br>
+			<input type="date" class="form-control" id="fechaC" name="fechaC">
+		   </div>
+		   
+		   <div class="form-group;col-xs-3 col-sm-3 col-md-4">
+			<label for="fechaI">Fecha de Ingreso</label><br>
+			<input type="date" class="form-control" id="fechaI" name="fechaI">
+		   </div>
+		  
+		</div>
+	</div>
+		
+		
+		<br>		  
+		<a href="EscolaridadA.html" class="btn btn-primary" role="button">Guardar</a>
+		</form>
+	  </div>
+	</div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  </body>
+</html>

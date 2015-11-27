@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Usuario</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">   
+	<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+	<style>
+		body {margin:0%;}
+		.form-group{margin-top:12px;}
+		.panel-heading{text-align:center;font-size:40px;}
+		.panel {margin:3%;}
+		.img-rounded{margin-top:4px;width:40px;height:40px;}
+		.btn {margin:1%;}
+	</style>
+
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-default">
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <img alt="Brand" src="logo.jpg" class="img-rounded">
+		</div>
+		<div>
+      <ul class="nav navbar-nav">
+	  	<li class="active"><a href="Usuarios.html">Usuarios</a></li> 
+        <li ><a href="Persona.html">Crear Usuario</a></li>
+        <li><a href="Buscar.html">Buscar</a></li>
+         <li><a href="Actualizar.html">Actualizar</a></li> 
+      </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Salir</a></li>
+      </ul>
+    </div>
+		</div>
+</nav>
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="container">
+	  <h2>Usuarios</h2>
+	  <p>Usuarios Actuales del Sistema:</p>            
+	  <table class="table table-striped">
+		<thead>
+		  <tr>
+			<th>Nombres</th>
+			<th>Apellidos</th>
+			<th>E-mail</th>
+			<th>Buscar</th>
+			<th>Actualizar</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>john@example.com</td>
+			<td><a href="Buscar.html" class="btn btn-success" role="button">Buscar</a></td>
+			<td><a href="Actualizar.html" class="btn btn-warning" role="button">Actualizar</a></td>
+		  </tr>
+		  <tr>
+			<td>Mary</td>
+			<td>Moe</td>
+			<td>mary@example.com</td>
+			<td><a href="Buscar.html" class="btn btn-success" role="button">Buscar</a></td>
+			<td><a href="Actualizar.html" class="btn btn-warning" role="button">Actualizar</a></td>
+		  </tr>
+		  <tr>
+			<td>July</td>
+			<td>Dooley</td>
+			<td>july@example.com</td>
+			<td><a href="Buscar.html" class="btn btn-success" role="button">Buscar</a></td>
+			<td><a href="Actualizar.html" class="btn btn-warning" role="button">Actualizar</a></td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+  </div>
+</div>
+
+  
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
